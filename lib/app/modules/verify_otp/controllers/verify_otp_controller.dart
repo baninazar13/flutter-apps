@@ -16,7 +16,7 @@ class VerifyOtpController extends GetxController {
 
   void verifyOTP(String otp) async {
     var url =
-        'http://10.0.0.11:5000/verifikasi'; // Ganti dengan URL endpoint Flask yang sesuai
+        'http://192.168.1.6:5000/verifikasi'; // Ganti dengan URL endpoint Flask yang sesuai
 
     var body = {
       'otp': otp,

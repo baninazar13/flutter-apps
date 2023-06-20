@@ -14,14 +14,13 @@ class LoginController extends GetxController {
   final passwordController = TextEditingController();
 
   void loginUser(String email, String password) async {
-    var url = 'http://10.0.0.11:5000/login';
+    var url = 'http://192.168.1.6:5000/login';
 
     // String email = "fahmi@gmail.com";
     // String password = "fahmi123";
 
     var body = {'email': email, 'password': password};
     print(email);
-    print(password);
     var response = await http.post(Uri.parse(url),
         headers: {"Content-Type": "application/json"}, body: json.encode(body));
 

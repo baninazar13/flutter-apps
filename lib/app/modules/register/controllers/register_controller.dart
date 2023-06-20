@@ -17,7 +17,7 @@ class RegisterController extends GetxController {
 
   void registerUser(String firstname, String lastname, String email,
       String password, String confirmPassword) async {
-    var url = 'http://10.0.0.11:5000/register';
+    var url = 'http://192.168.1.6:5000/register';
 
     // Membuat body request dalam format JSON
     var body = {

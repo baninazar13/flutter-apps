@@ -12,7 +12,7 @@ class UserController extends GetxController {
   }
 
   Future<void> getUserData() async {
-    var url = 'http://10.0.0.11:5000/user';
+    var url = 'http://192.168.1.6:5000/user';
     var headers = {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer $token',
